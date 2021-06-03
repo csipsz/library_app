@@ -2,10 +2,8 @@ class CLI
 
     def call 
         greeting
-        API.get_data
-        puts Book.all[0].title
-        puts Book.all[0].author
-        puts Book.all[0].description
+        API.get_book_data
+        Book.list_books_planned
     end 
 
     def greeting
